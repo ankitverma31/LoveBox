@@ -1,0 +1,125 @@
+/*-------------------------Toogle Menu Starts-------------------------*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*-------------------------Toogle Menu Ends-------------------------*/
+
+/*Heart Style Starts*/
+body {
+  background: #B7004E;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  position:relative;
+}
+#canvas{
+  position:absolute;
+}
+
+h1{
+  	font-weight: bold;
+    font-size: 400%;
+  	font-family: 'Niconne', cursive;
+  	color: #F90;
+  	text-align: center;
+    margin-top: 0;
+    position: relative;
+  }
+.btn{
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+   width: 100%;
+   font-family: 'Aref Ruqaa', serif;
+}
+label{
+  font-family: 'Aref Ruqaa', serif;
+  color: #F90;
+  font-size: 100%;
+
+}
+input[type="text"]{
+	font-family: 'Aref Ruqaa', serif;
+  font-weight: bold;
+}
+input:focus, textarea:focus{
+	border: solid 3px #ef1313;
+}
+
+#count,p{
+  display:inline-block;
+  text-align: center;
+  font-size: 600%;
+  color: #F90;
+  font-family: 'Aref Ruqaa', serif;
+}
+.percent{
+  text-align: center;
+}
+
+.mecrush{
+  font-size: 150%;
+  color: #F90;
+}
+.name{
+  text-align: center;
+  top: 0;
+}
+
+/*-------------------------Heart Beats Starts-------------------------*/
+.heart {
+  width: 55px;
+  height: 43px;
+  z-index: 5;
+  animation: beat 1.2s ease-in-out infinite forwards;
+}
+
+@keyframes beat {
+  0%, 100% { transform: scale3d(1,1,1);}
+  15%, 45% { transform: scale3d(1.2,1.2,1); }
+  35% { transform: scale3d(1.1,1.1,1); }
+  65% { transform: scale3d(1,1,1); }
+}
+
+@keyframes beat-shadow {
+  0%, 100% { transform: scale3d(1,1,1);}
+  15%, 45% { transform: scale3d(1.05,1.05,1); }
+  30%, 60% { transform: scale3d(1,1,1); }
+}
+/*-------------------------Heart Beats Ends-------------------------*/
