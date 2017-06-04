@@ -72,6 +72,7 @@ label{
   font-family: 'Aref Ruqaa', serif;
   color: #F90;
   font-size: 100%;
+  cursor: pointer;
 
 }
 input[type="text"]{
