@@ -34,11 +34,17 @@ calculate.controller("loveCtrl",function($scope){
   };
 });
 
-//--------------------------- SoulMate Function--------------------------- 
+//--------------------------- SoulMate Function---------------------------
 
 
 var soulmate = angular.module("soulMate",[])
 soulmate.controller("soulMateCtrl",function($scope){
+  $scope.doCheck = function () {
+        if (!$scope.smMyName) {
+            $scope.soulMateName=false;
+            //  alert('too long');
+        }
+    }
   $scope.findSoulMate = function(){
     $scope.smMyName.textRequired = true;
     $scope.soulMateName=true;
