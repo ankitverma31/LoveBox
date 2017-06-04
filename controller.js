@@ -22,31 +22,31 @@ calculate.controller("loveCtrl",function($scope){
     // Display Message Timeout Function Start
     setTimeout(function(){
       if (percentage>=90 && percentage<=100){
-        alert("Made For Each Other, A Perfect Match!");
+        if(!alert('Made For Each Other, A Perfect Match!')){window.location.reload();}
       }
       else if (percentage>=80 && percentage<90){
-        alert("Change Your Name Else Lend Your Surname");
+        if(!alert('Change Your Name Else Lend Your Surname')){window.location.reload();}
       }
       else if (percentage>=70 && percentage<80){
-        alert("Worth Taking Risk!Go Ahead...");
+        if(!alert('Worth Taking Risk!Go Ahead...')){window.location.reload();}
       }
       else if (percentage>=60 && percentage<70){
-        alert("Still High Chances Of Getting Together");
+        if(!alert('Still High Chances Of Getting Together')){window.location.reload();}
       }
       else if (percentage>=50 && percentage<60){
-        alert("There Are No Half Measures, Do or Die For You");
+        if(!alert('There Are No Half Measures, Do or Die For You')){window.location.reload();}
       }
       else if (percentage>=40 && percentage<50){
-        alert("A Lot Of Effort Required From Both Sides!");
+        if(!alert('A Lot Of Effort Required From Both Sides!')){window.location.reload();}
       }
       else if (percentage>=30 && percentage<40){
-        alert("Try Becoming A Puppy For Him/Her!Might Work...");
+        if(!alert('Try Becoming A Puppy For Him/Her!Might Work...')){window.location.reload();}
       }
       else if (percentage>=20 && percentage<30){
-        alert("Try Becoming A Puppy For Him/Her!Might Work...");
+        if(!alert('Try Becoming A Puppy For Him/Her!Might Work...')){window.location.reload();}
       }
       else if (percentage>=0 && percentage<10){
-        alert("Try Searching: Ways To Commit Sucide!");
+        if(!alert('Try Searching: Ways To Commit Sucide!')){location.href = 'https://www.youtube.com/watch?v=ncdLBvFIIco';}
       }
 
 
