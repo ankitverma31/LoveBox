@@ -21,13 +21,19 @@
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index">Love Percentage</a>
+  <a href="index.html">Love Percentage</a>
   <a href="#">Competitor</a>
   <a href="soulmatefinder.html">Soulmate Finder</a>
 </div>
 
-  <span style="font-size:30px;cursor:pointer;position:relative" onclick="openNav()">&#9776;LoveBox</span>
+  <span style="font-size:30px;cursor:pointer;position:relative" onclick="openNav()"><label>&#9776;LoveBox</label></span>
   <h1 >Reveal True Love!</h1>
 <div class="container">
+  <div class="form-group">
+    <label>Your Name:</label>
+    <input type="text" class="form-control" placeholder="Your Name.." ng-model="" required>
+  </div>
+  <button class="btn btn-success"  ng-click="calculate()">Calculate</button>
+</div>
 </body>
 </html>
