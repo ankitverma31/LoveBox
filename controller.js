@@ -33,3 +33,13 @@ calculate.controller("loveCtrl",function($scope){
     });
   };
 });
+
+
+
+
+var soulmate = angular.module("soulMate",[])
+soulmate.controller("soulMateCtrl",function($scope){
+  $scope.findSoulMate = function(){
+    $scope.soulMateName=true;
+  };
+});
