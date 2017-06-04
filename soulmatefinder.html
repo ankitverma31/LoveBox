@@ -28,12 +28,35 @@
 
   <span style="font-size:30px;cursor:pointer;position:relative" onclick="openNav()"><label>&#9776;&nbsp;LoveBox</label></span>
   <h1 >Soul Mate</h1>
+<div ng-app="soulMate" ng-controller="soulMateCtrl">
 <div class="container">
   <div class="form-group">
     <label>Your Name:</label>
     <input type="text" class="form-control" placeholder="Your Name.." ng-model="crushName" required>
   </div>
   <button class="btn btn-success"  ng-click="findSoulMate()">Find</button>
+</div>
+
+
+<div id="Awesome" class="anim750">
+  <div class="reveal circle_wrapper">
+		<div class="circle">Hello!</div>
+	</div>
+
+	<div class="sticky anim750">
+		<div class="front circle_wrapper anim750">
+			<div class="circle anim750"></div>
+	  </div>
+	</div>
+
+  <h4>Peel Me!</h4>
+
+  <div class="sticky anim750">
+		<div class="back circle_wrapper anim750">
+			<div class="circle anim750"></div>
+		</div>
+	</div>
+</div>
 </div>
 </body>
 </html>
