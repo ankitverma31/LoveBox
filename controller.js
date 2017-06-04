@@ -46,7 +46,7 @@ calculate.controller("loveCtrl",function($scope){
         if(!alert('Try Becoming A Puppy For Him/Her!Might Work...')){window.location.reload();}
       }
       else if (percentage>=0 && percentage<10){
-        if(!alert('Try Searching: Ways To Commit Sucide!')){location.href = 'https://www.youtube.com/watch?v=ncdLBvFIIco';}
+        if(!alert('Try Searching: Ways To Commit Sucide!')){location.href = 'https://www.youtube.com/watch?v=frw6uu3nonQ';}
       }
 
 
