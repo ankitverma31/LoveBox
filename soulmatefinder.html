@@ -30,19 +30,20 @@
   <h1 >Soul Mate</h1>
 <div ng-app="soulMate" ng-controller="soulMateCtrl">
 <div class="container">
-  <form>
+  <form name="myForm">
   <div class="form-group">
     <label>Your Name:</label>
-    <input type="text" class="form-control" placeholder="Your Name.." ng-model="smMyName" ng-required="true" />
+    <input type="text" class="form-control" placeholder="Your Name.." ng-model="smMyName" required="text"/>
   </div>
-  <button class="btn btn-success"  ng-click="myform.$valid && findSoulMate()">Find</button>
+  <button class="btn btn-success"  ng-click="findSoulMate()">Find</button>
 </form>
 </div>
+<br><br><br>
 
 <div ng-show="soulMateName">
 <div id="Awesome" class="anim750">
   <div class="reveal circle_wrapper">
-		<div class="circle">Anushka</div>
+		<div class="circle">Vedanti</div>
 	</div>
 
 	<div class="sticky anim750">
