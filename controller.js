@@ -22,31 +22,31 @@ calculate.controller("loveCtrl",function($scope){
     // Display Message Timeout Function Start
     setTimeout(function(){
       if (percentage>=90 && percentage<=100){
-        if(!alert('Made For Each Other, A Perfect Match!')){window.location.reload();}
+        alert("Made For Each Other, A Perfect Match!");
       }
       else if (percentage>=80 && percentage<90){
-        if(!alert('Change Your Name Else Lend Your Surname')){window.location.reload();}
+        alert("Change Your Name Else Lend Your Surname");
       }
       else if (percentage>=70 && percentage<80){
-        if(!alert('Worth Taking Risk!Go Ahead...')){window.location.reload();}
+        alert("Worth Taking Risk!Go Ahead...");
       }
       else if (percentage>=60 && percentage<70){
-        if(!alert('Still High Chances Of Getting Together')){window.location.reload();}
+        alert("Still High Chances Of Getting Together");
       }
       else if (percentage>=50 && percentage<60){
-        if(!alert('There Are No Half Measures, Do or Die For You')){window.location.reload();}
+        alert("There Are No Half Measures, Do or Die For You");
       }
       else if (percentage>=40 && percentage<50){
-        if(!alert('A Lot Of Effort Required From Both Sides!')){window.location.reload();}
+        alert("A Lot Of Effort Required From Both Sides!");
       }
       else if (percentage>=30 && percentage<40){
-        if(!alert('Try Becoming A Puppy For Him/Her!Might Work...')){window.location.reload();}
+        alert("Try Becoming A Puppy For Him/Her!Might Work...");
       }
       else if (percentage>=20 && percentage<30){
-        if(!alert('Try Becoming A Puppy For Him/Her!Might Work...')){window.location.reload();}
+        alert("Try Becoming A Puppy For Him/Her!Might Work...");
       }
       else if (percentage>=0 && percentage<10){
-        if(!alert('Try Searching: Ways To Commit Sucide!')){location.href = 'https://www.youtube.com/watch?v=frw6uu3nonQ';}
+        alert("Try Searching: Ways To Commit Sucide!");
       }
 
 
