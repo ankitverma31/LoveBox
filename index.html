@@ -1,60 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoveBox | Love Percentage</title>
-    <meta name="title" content="LoveBox | Perfect Predictions">
-    <meta name="description" content="A Complete Love ToolBox">
-    <meta name="author" content="Ankit Verma">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet">
-
-
-    <script src="script.js"></script>
-    <script src="controller.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LoveBox | Love Percentage</title>
+  <meta name="title" content="LoveBox | Perfect Predictions">
+  <meta name="description" content="Love Percentage Calculator">
+  <meta name="author" content="Ankit Verma">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet">
+  <script src="script.js"></script>
+  <script src="controller.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body ng-app="loveCalculator" ng-controller="loveCtrl">
   <canvas id="canvas"></canvas>
-
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html">Love Percentage</a>
-  <a href="#">Competitor</a>
-  <a href="soulmatefinder.html">Soulmate Finder</a>
-</div>
-
-  <span style="font-size:30px;cursor:pointer;position:relative" onclick="openNav()"><label>&#9776;&nbsp;LoveBox</label></span>
-  <h1 >Love Percentage</h1>
-<div class="container">
-
-  <div class="form-group">
-  <label>Your Name:</label>
-  <form>
-  <input type="text" class="form-control" placeholder="Enter Your Name.." ng-model="myName" required>
-</div>
-<div class="form-group">
-  <label>Crush  Bf/Gf  Name:</label>
-  <input type="text" class="form-control" placeholder="Enter Crush Bf/Gf Name.." ng-model="crushName" required>
-</div>
-<button class="btn btn-success"  ng-click="calculate()">Calculate</button>
-</form>
-<div class="percent">
-<div id="count">0</div><p>%</p>
-</div>
-</div>
-<div class="name" ng-show="name">
-  <p class="mecrush" ng-model="me">{{me|uppercase}}&nbsp;</p><img class="heart" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/heart2.svg"><p class="mecrush" ng-model="crush">&nbsp;{{crush|uppercase}}</p>
-</div>
-
-<!-- <h5 class="message">{{message}}</h5> -->
+  <h1>Love Percentage</h1>
+  <div class="container">
+    <div class="form-group">
+      <label>Your Name:</label>
+      <form>
+        <input type="text" class="form-control" placeholder="Enter Your First Name.." ng-model="myName" required>
+    </div>
+    <div class="form-group">
+      <label>Crush Bf/Gf Name:</label>
+      <input type="text" class="form-control" placeholder="Enter Crush/Bf/Gf First Name.." ng-model="crushName" required>
+    </div>
+    <button class="btn btn-success" ng-click="calculate()">Calculate</button>
+    </form>
+    <div class="percent">
+      <div id="count">0</div>
+      <p>%</p>
+    </div>
+  </div>
+  <div class="name" ng-show="name">
+    <p class="mecrush" ng-model="me">{{me|uppercase}}&nbsp;</p>
+    <img class="heart" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/heart2.svg">
+    <p class="mecrush" ng-model="crush">&nbsp;{{crush|uppercase}}</p>
+  </div>
 </body>
+
 </html>

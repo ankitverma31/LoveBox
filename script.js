@@ -1,14 +1,3 @@
-// -------------------------Toogle Menu Starts-------------------------
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-//------------------------- Toogle Menu Ends-------------------------
-
-
 //------------------------- Heart Background Starts-------------------------
 var HeartsBackground = {
   heartHeight: 60,
