@@ -3,7 +3,7 @@ var HeartsBackground = {
   heartHeight: 60,
   heartWidth: 64,
   hearts: [],
-  heartImage: 'http://i58.tinypic.com/ntnw5.png',
+  heartImage: "http://i58.tinypic.com/ntnw5.png",
   maxHearts: 8,
   minScale: 0.4,
   draw: function() {
@@ -15,15 +15,21 @@ var HeartsBackground = {
       heart.image.style.height = heart.height;
       heart.image.src = this.heartImage;
       this.ctx.globalAlpha = heart.opacity;
-      this.ctx.drawImage (heart.image, heart.x, heart.y, heart.width, heart.height);
+      this.ctx.drawImage(
+        heart.image,
+        heart.x,
+        heart.y,
+        heart.width,
+        heart.height
+      );
     }
     this.move();
   },
   move: function() {
-    for(var b = 0; b < this.hearts.length; b++) {
+    for (var b = 0; b < this.hearts.length; b++) {
       var heart = this.hearts[b];
       heart.y += heart.ys;
-      if(heart.y > this.h) {
+      if (heart.y > this.h) {
         heart.x = Math.random() * this.w;
         heart.y = -1 * this.heartHeight;
       }
@@ -36,16 +42,15 @@ var HeartsBackground = {
     this.h = this.canvas.height;
   },
   initialize: function() {
-    this.canvas = $('#canvas')[0];
+    this.canvas = $("#canvas")[0];
 
-    if(!this.canvas.getContext)
-      return;
+    if (!this.canvas.getContext) return;
 
     this.setCanvasSize();
-    this.ctx = this.canvas.getContext('2d');
+    this.ctx = this.canvas.getContext("2d");
 
-    for(var a = 0; a < this.maxHearts; a++) {
-      var scale = (Math.random() * (1 - this.minScale)) + this.minScale;
+    for (var a = 0; a < this.maxHearts; a++) {
+      var scale = Math.random() * (1 - this.minScale) + this.minScale;
       this.hearts.push({
         x: Math.random() * this.w,
         y: Math.random() * this.h,
@@ -60,7 +65,7 @@ var HeartsBackground = {
   }
 };
 
-$(document).ready(function(){
+$(document).ready(function() {
   HeartsBackground.initialize();
 });
 //------------------------- Heart Background Ends-------------------------

@@ -1,68 +1,69 @@
 /*-------------------------Toogle Menu Ends-------------------------*/
-h5{
+h5 {
   font-weight: bold;
-  font-family: 'Niconne', cursive;
-  color: #F90;
+  font-family: "Niconne", cursive;
+  color: #f90;
 }
 /*Heart Style Starts*/
 body {
-  background: #B7004E;
+  background: #b7004e;
   margin: 0;
   padding: 0;
   overflow-y: hidden;
 }
 .container {
-  position:relative;
+  position: relative;
 }
-#canvas{
-  position:absolute;
+#canvas {
+  position: absolute;
 }
 
-h1{
-  	font-weight: bold;
-    font-size: 400%;
-  	font-family: 'Niconne', cursive;
-  	color: #F90;
-  	text-align: center;
-    /*margin-top: 0;*/
-    position: relative;
-  }
-.btn{
-   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-   width: 100%;
-   font-family: 'Aref Ruqaa', serif;
+h1 {
+  font-weight: bold;
+  font-size: 400%;
+  font-family: "Niconne", cursive;
+  color: #f90;
+  text-align: center;
+  /*margin-top: 0;*/
+  position: relative;
 }
-label{
-  font-family: 'Aref Ruqaa', serif;
-  color: #F90;
+.btn {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  font-family: "Aref Ruqaa", serif;
+}
+label {
+  font-family: "Aref Ruqaa", serif;
+  color: #f90;
   font-size: 100%;
   cursor: pointer;
-
 }
-input[type="text"]{
-	font-family: 'Aref Ruqaa', serif;
+input[type="text"] {
+  font-family: "Aref Ruqaa", serif;
   font-weight: bold;
 }
-input:focus, textarea:focus{
-	border: solid 3px #ef1313;
+input:focus,
+textarea:focus {
+  border: solid 3px #ef1313;
 }
 
-#count,p{
-  display:inline-block;
+#count,
+p {
+  display: inline-block;
   text-align: center;
   font-size: 600%;
-  color: #F90;
-  font-family: 'Aref Ruqaa', serif;
+  color: #f90;
+  font-family: "Aref Ruqaa", serif;
 }
-.percent{
+.percent {
   text-align: center;
 }
 
-.mecrush{
+.mecrush {
   font-size: 150%;
-  color: #F90;
+  color: #f90;
 }
-.name{
+.name {
   text-align: center;
   top: 0;
 }
@@ -76,15 +77,34 @@ input:focus, textarea:focus{
 }
 
 @keyframes beat {
-  0%, 100% { transform: scale3d(1,1,1);}
-  15%, 45% { transform: scale3d(1.2,1.2,1); }
-  35% { transform: scale3d(1.1,1.1,1); }
-  65% { transform: scale3d(1,1,1); }
+  0%,
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+  15%,
+  45% {
+    transform: scale3d(1.2, 1.2, 1);
+  }
+  35% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+  65% {
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 @keyframes beat-shadow {
-  0%, 100% { transform: scale3d(1,1,1);}
-  15%, 45% { transform: scale3d(1.05,1.05,1); }
-  30%, 60% { transform: scale3d(1,1,1); }
+  0%,
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+  15%,
+  45% {
+    transform: scale3d(1.05, 1.05, 1);
+  }
+  30%,
+  60% {
+    transform: scale3d(1, 1, 1);
+  }
 }
 /*-------------------------Heart Beats Ends-------------------------*/
